@@ -2,7 +2,7 @@
 
 To build scraper type:
 
-`docker build -t docker-scraper`
+`docker build -t docker-scraper .`
 
 To run docker image use command:
 
@@ -14,7 +14,7 @@ Scraper return urls searched in github. Scraper handle three types of searching:
 - Issues
 - Wikis
 
- To make request json body prepare http post with header and json  body. Example post request by curl:
+ To make request json body prepare http post http://127.0.0.1:5000/find_resource with header and json  body. Example post request by curl:
 
 curl -X POST -H 'Content-Type: application/json' -i 'http://127.0.0.1:5000/find_resource' --data '{
   "keywords": [
